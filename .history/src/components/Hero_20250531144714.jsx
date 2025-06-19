@@ -1,0 +1,28 @@
+import { Link } from "react-router-dom";
+import Button from "./button/Button";
+import Container from "./Container";
+
+function Hero() {
+  return (
+    <div>
+      <Container>
+        <section>
+          <div className=" text-xl md:text-3xl">
+            <h1>
+              Hi , I am
+              <span className="px-2 font-bold text-xl md:text-3xl">
+                Rohullah Noori
+              </span>
+            </h1>
+            <h3>frontend web developer and wordpress designer</h3>
+            <Button>
+              <Link to="/projects">Projects</Link>
+            </Button>
+          </div>
+        </section>
+      </Container>
+    </div>
+  );
+}
+
+export default Hero;
