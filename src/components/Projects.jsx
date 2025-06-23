@@ -2,131 +2,124 @@ import Container from "./Container";
 import ProjectCard from "./ProjectCard";
 import { motion } from "framer-motion";
 import image from "../assets/web.jpg";
-
+import Travel from "../assets/travel.jpg";
 import Skillbtn from "./button/Skillbtn";
+import Movie from "../assets/movie.jpg";
+import TaskApp from "../assets/task.jpg";
+import Shoponline from "../assets/shopping.jpg";
+import blog from "../assets/blog.jpg";
+import bill from "../assets/bill.jpg";
 function Projects() {
-  const liveLink = "https://task-app-alpha-one.vercel.app/login";
-  const githublink = "https://github.com/Rohullah-Noori/TaskApp";
-  // const skillh = (
-  //   <div className="flex gap-4 p-4">
-  //     <Skillbtn icon="html" title="HTML5" />
-  //     <Skillbtn icon="react" title="React" />
-  //     <Skillbtn icon="tailwind" title="Tailwind CSS" />
-  //     <Skillbtn icon="nextjs" title="Next.js" />
-  //   </div>
-  // );
+  const liveLinktravel = "https://travel-packing-app.vercel.app/";
+  const githublinktravel =
+    "https://github.com/Rohullah-Noori/Travel-packing-app";
+
+  const liveLinkmovie = "https://react-movie-blog.vercel.app/";
+  const githublinktmovie = "https://github.com/Rohullah-Noori/react-movie-blog";
+  const liveLinktaskapp = "https://task-app-alpha-one.vercel.app";
+  const githublinktaskapp = "https://github.com/Rohullah-Noori/TaskApp";
+  const liveLinkonlineshop = "#";
+  const githublinkonlineshop =
+    "https://github.com/Rohullah-Noori/Nextjs-online-shop";
+
+  const liveLinkblog = "https://atomic-blog-puce.vercel.app/";
+  const githublinkblog = "https://github.com/Rohullah-Noori/Atomic-blog";
+
+  const liveLinkbill = "#";
+  const githublinkbill = "https://github.com/Rohullah-Noori/restaurant";
   const ProjectCardDetails = [
     {
-      title: "Map",
-      github: githublink,
-      live: liveLink,
-      imagebackground: image,
+      title: "Travel packing App",
+      github: githublinktravel,
+      live: liveLinktravel,
+      imagebackground: Travel,
       description:
-        " Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit at illo autem eveniet, facilis quaerat nihil dolores magnam similique non. ",
-
+        "A simple and responsive React app to manage your travel packing list. Easily add, check off, and remove items quickly.",
       skills: [
-        { icon: "html", title: "HTML5" },
+        { icon: "html", title: "HTML" },
+        { icon: "css", title: "CSS" },
         { icon: "react", title: "React" },
-        { icon: "tailwind", title: "Tailwind CSS" },
       ],
     },
     {
       title: "TaskApp",
-      github: githublink,
-      live: liveLink,
-      imagebackground: image,
+      github: githublinktaskapp,
+      live: liveLinktaskapp,
+      imagebackground: TaskApp,
       description:
-        " Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit at illo autem eveniet, facilis quaerat nihil dolores magnam similique non. ",
+        " Task management app built with HTML, Tailwind CSS, and React for creating, editing, and tracking tasks ",
 
       skills: [
-        { icon: "html", title: "HTML5" },
+        { icon: "html", title: "HTML" },
         { icon: "react", title: "React" },
         { icon: "tailwind", title: "Tailwind CSS" },
       ],
     },
     {
-      title: "Picnic",
-      github: githublink,
-      live: liveLink,
-      imagebackground: image,
+      title: "Atomic Movie Blog",
+      github: githublinktmovie,
+      live: liveLinkmovie,
+      imagebackground: Movie,
       description:
-        " Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit at illo autem eveniet, facilis quaerat nihil dolores magnam similique non. ",
+        "A responsive movie blog using React, HTML, and CSS. Easily search, track, and rate favorite films with a clean interface. ",
 
       skills: [
-        { icon: "html", title: "HTML5" },
+        { icon: "html", title: "HTML" },
+        { icon: "css", title: "CSS" },
         { icon: "react", title: "React" },
-        { icon: "tailwind", title: "Tailwind CSS" },
       ],
     },
     {
-      title: "Bank",
-      github: githublink,
-      live: liveLink,
-      imagebackground: image,
+      title: "OnlineShop",
+      github: githublinkonlineshop,
+      live: liveLinkonlineshop,
+      imagebackground: Shoponline,
       description:
-        " Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit at illo autem eveniet, facilis quaerat nihil dolores magnam similique non. ",
-
+        "A fully responsive online shop built with Next.js, Tailwind CSS, and HTML featuring clean UI, dynamic routing, and smooth product browsing.",
       skills: [
-        { icon: "html", title: "HTML5" },
-        { icon: "react", title: "React" },
-        { icon: "tailwind", title: "Tailwind CSS" },
-      ],
-    },
-    {
-      title: "internet",
-      github: githublink,
-      live: liveLink,
-      imagebackground: image,
-      description:
-        " Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit at illo autem eveniet, facilis quaerat nihil dolores magnam similique non. ",
+        { icon: "html", title: "HTML" },
 
-      skills: [
-        { icon: "html", title: "HTML5" },
-        { icon: "react", title: "React" },
-        { icon: "tailwind", title: "Tailwind CSS" },
-      ],
-    },
-    {
-      title: "shop",
-      github: githublink,
-      live: liveLink,
-      imagebackground: image,
-      description:
-        " Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit at illo autem eveniet, facilis quaerat nihil dolores magnam similique non. ",
-
-      skills: [
-        { icon: "html", title: "HTML5" },
-        { icon: "react", title: "React" },
         { icon: "tailwind", title: "Tailwind CSS" },
         { icon: "nextjs", title: "Next.js" },
       ],
     },
-    // {
-    //   title: "Map",
-    //   github: githublink,
-    //   live: liveLink,
-    //   imagebackground: image,
-    // },
-    // {
-    //   title: "Map",
-    //   github: githublink,
-    //   live: liveLink,
-    //   imagebackground: image,
-    // },
-    // {
-    //   title: "Map",
-    //   github: githublink,
-    //   live: liveLink,
-    //   imagebackground: image,
-    // },
+
+    {
+      title: "Blog Post",
+      github: liveLinkblog,
+      live: githublinkblog,
+      imagebackground: blog,
+      description:
+        "A responsive blog post app built with React, HTML, and CSS. Features clean layout, dynamic content rendering, and smooth navigation for reading and managing posts.",
+
+      skills: [
+        { icon: "html", title: "HTML" },
+        { icon: "css", title: "CSS" },
+        { icon: "react", title: "React" },
+      ],
+    },
+    {
+      title: "Restaurant Bill App",
+      github: githublinkbill,
+      live: liveLinkbill,
+      imagebackground: bill,
+      description:
+        "A simple and responsive restaurant bill app built with React, HTML, and CSS. Easily split bills, calculate totals, and manage group expenses efficiently.",
+
+      skills: [
+        { icon: "html", title: "HTML" },
+        { icon: "css", title: "CSS" },
+        { icon: "react", title: "React" },
+      ],
+    },
   ];
   return (
-    <div className="mt-20 text-center text-w  hite bg-black">
+    <div className="mt-20 text-center bg-black text-w hite">
       <Container>
         <div className="items-center justify-center w-full px-5 py-5 text-center md:px-30 ">
           <h1 className="text-5xl font-bold">Projects</h1>
         </div>
-        <div className="grid w-full grid-cols-1 gap-6 p-4  text-start sm:grid-cols-2 lg:grid-cols-3 md:p-5">
+        <div className="grid w-full grid-cols-1 gap-6 p-4 text-start sm:grid-cols-2 lg:grid-cols-3 md:p-5">
           {ProjectCardDetails.map((item, index) => (
             <motion.div
               key={index}

@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
-import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
+import { FaBroadcastTower, FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import Skillbtn from "./button/Skillbtn";
+import { MdLiveTv } from "react-icons/md";
 
 function ProjectCard({
   titleIcon,
@@ -18,8 +19,8 @@ function ProjectCard({
         style={{ backgroundImage: `url(${imagebackground})` }}
       ></div>
 
-      <div className="w-full flex flex-col items-center p-4 text-black bg-white rounded-b-md">
-        <h1>{title}</h1>
+      <div className="flex flex-col items-center w-full p-4 text-black bg-white rounded-b-md">
+        <h1 className="font-semibold">{title}</h1>
         <p className="text-center">{description}</p>
         <div className="flex flex-wrap gap-2 mb-4">
           {skills.map((skill, index) => (
@@ -28,7 +29,7 @@ function ProjectCard({
         </div>
         <div className="flex justify-center gap-4 mb-4">
           <a
-            href={liveIcon}
+            href={MdLiveTv}
             target="_blank"
             rel="noopener noreferrer"
             className="text-xl text-black hover:text-blue-300"
